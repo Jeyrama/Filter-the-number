@@ -14,8 +14,12 @@ you have to return all the numbers in that string in the order they occur.
 
 // Solution 
 
-let FilterString = function(value) {
+let filterString = function(value) {
   return parseInt(value.replace(/[^\d]/g, ""))
 }
 
 // or
+
+function filterString(value) {
+  return +value.split('').filter(n => !isNaN(n)).join('');
+}
