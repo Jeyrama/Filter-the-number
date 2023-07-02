@@ -14,3 +14,8 @@ you have to return all the numbers in that string in the order they occur.
 
 // Solution 
 
+let FilterString = function(value) {
+  return parseInt(value.replace(/[^\d]/g, ""))
+}
+
+// or
